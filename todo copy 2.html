@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Drop Todo App</title>
+  
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="box">
+<h1>Drag & Drop Todo List</h1>
+<div class= "grid-container">
+  <div class="griditem">
+    <div class="details-prepend">
+      <h2>What are you doing today?</h2>
+    </div>
+  
+    <input type="text" class="form-control" placeholder="Enter" data-name="todo-input" /> 
+   
+    <div class="details-append">
+      <br>
+       <button class="btn-main" data-name="add-btn">Add</button>
+    </div>
+  </div>
+
+  <div class="griditem">
+    <h2>Todos</h2>
+    <ul class="list" data-name="todos-list">
+      <li class="listitem" data-id="1" draggable="true">
+        <p>todo1</p>
+        <button class="btnsub" data-name="remove-btn">
+          X
+        </button>
+      </li>
+      <li class="listitem" data-id="2" draggable="true" >
+        <p>todo2</p>
+        <button class="btnsub" data-name="remove-btn">
+          X
+        </button>
+      </li>
+      <li class="listitem" data-id="3"draggable="true" >
+        <p>todo3</p>
+        <button class="btnsub" data-name="remove-btn">
+          X
+        </button>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="girditem" data-name="completed-list">
+    <h2>Completed</h2>
+    <ul class="list" ></ul>
+  </div>
+</div>
+</main>
+
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
